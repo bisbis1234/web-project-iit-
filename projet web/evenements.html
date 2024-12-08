@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes Événements - Portfolio</title>
+  <link rel="stylesheet" href="css/evenement.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Toggle Button -->
+  <button id="toggle-navbar" class="toggle-button">☰</button>
+
+  <!-- Side Navbar -->
+  <div class="side-navbar hidden" id="side-navbar">
+    <ul>
+      <li><a href="evenements.html" class="active">Manifestations scientifiques</a></li>
+      <li><a href="matieres.html">Matières</a></li>
+      <li><a href="passions.html">Passions</a></li>
+      <li><a href="quiz.html">Quizz</a></li>
+      <li><a href="iit.html">IIT</a></li>
+    </ul>
+  </div>
+
+  <!-- Titre du site -->
+  <header>
+    <h1>Mes Événements</h1>
+  </header>
+
+  <!-- Menu de navigation principal -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="parcours.html">Parcours</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="experiences.html">Expériences</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  
+
+  <!-- Journées de Formation -->
+  <section>
+    <h2>Formations</h2>
+
+    <div class="event-item">
+      <img src="images/dev.png" alt="Formation CV et Développement Web">
+      <div class="event-details">
+        <h3>Formation : Création d'un CV et Développement Web</h3>
+        <p>Une formation pratique sur la création d'un CV et l'amélioration de mes compétences en développement web.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JPO du ISIMS -->
+  <section>
+    <h2>JPO du ISIMS</h2>
+
+    <div class="event-item">
+      <img src="images/jpo.png" alt="JPO du ISIMS">
+      <div class="event-details">
+        <h3>Journée Portes Ouvertes du ISIMS</h3>
+        <p>Un événement organisé par le ISIMS pour rencontrer des étudiants et des professionnels du domaine informatique.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h3>Me suivre sur les réseaux sociaux</h3>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100005562796777" target="_blank" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/bassem-lahiani-3058a1270/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/bisbis1234" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- JavaScript pour basculer la barre latérale -->
+  <script>
+    const toggleButton = document.getElementById('toggle-navbar');
+    const sideNavbar = document.getElementById('side-navbar');
+
+    toggleButton.addEventListener('click', () => {
+      sideNavbar.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

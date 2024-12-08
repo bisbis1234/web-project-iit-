@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Site Personnel - Matières</title>
+  <link rel="stylesheet" href="css/matiers.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Toggle Button -->
+  <button id="toggle-navbar" class="toggle-button">☰</button>
+
+  <!-- Side Navbar -->
+  <div class="side-navbar hidden" id="side-navbar">
+    <ul>
+      <li><a href="evenements.html">Manifestations scientifiques</a></li>
+      <li><a href="matieres.html" class="active">Matières</a></li>
+      <li><a href="passions.html">Passions</a></li>
+      <li><a href="quiz.html">Quizz</a></li>
+      <li><a href="iit.html">IIT</a></li>
+    </ul>
+  </div>
+
+  <!-- Titre du site -->
+  <header>
+    <h1>Les Matières que J'ai Étudiées</h1>
+  </header>
+
+  <!-- Menu de navigation principal -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="parcours.html">Parcours</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="experiences.html">Expériences</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Matières étudiées -->
+  <section>
+    <h2>Les Matières que J'ai Étudiées</h2>
+    <p>Voici un aperçu des matières que j'ai étudiées dans le cadre de mon parcours :</p>
+
+    <ul>
+      <li><strong>Audio-visuel :</strong> Formation dans la production et l'édition de contenu vidéo, ainsi que dans les techniques de création multimédia interactif.</li>
+      <li><strong>Développement Web :</strong> Apprentissage des technologies du web (HTML, CSS, JavaScript) et développement de sites web dynamiques et interactifs.</li>
+      <li><strong>Design Thinking :</strong> Méthodologie centrée sur l'utilisateur pour concevoir des solutions innovantes aux problèmes complexes.</li>
+      <li><strong>Blender :</strong> Initiation à la modélisation 3D, l'animation et la création de visualisations interactives avec le logiciel Blender.</li>
+      <li><strong>Bases de données :</strong> Approfondissement des concepts fondamentaux des bases de données relationnelles et non relationnelles.</li>
+      <li><strong>Réalité Virtuelle et Augmentée (VR/AR) :</strong> Introduction à la conception et au développement d'applications immersives en réalité virtuelle et augmentée.</li>
+    </ul>
+  </section>
+
+  <!-- Projets Réalisés -->
+  <section>
+    <h2>Projets Réalisés</h2>
+    <p>Au-delà des matières théoriques, j'ai aussi participé à plusieurs projets pratiques qui m'ont permis de mettre en œuvre mes compétences. Voici quelques exemples :</p>
+
+    <ul>
+      <li><strong>Développement d'un jeu avec Unity :</strong> Création d'un jeu interactif utilisant Unity, avec des éléments de gamification et des interactions immersives dans un environnement 3D.</li>
+      <li><strong>Projet Web :</strong> Conception d'un site web dynamique, intégrant des outils interactifs pour améliorer l'expérience utilisateur et l'interface graphique.</li>
+      <li><strong>Réalité Augmentée (AR) :</strong> Développement d'une application de réalité augmentée permettant une meilleure interaction avec des éléments virtuels en superposition sur le monde réel.</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h3>Me suivre sur les réseaux sociaux</h3>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100005562796777" target="_blank" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/bassem-lahiani-3058a1270/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/bisbis1234" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- JavaScript pour basculer la barre latérale -->
+  <script>
+    const toggleButton = document.getElementById('toggle-navbar');
+    const sideNavbar = document.getElementById('side-navbar');
+
+    toggleButton.addEventListener('click', () => {
+      sideNavbar.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

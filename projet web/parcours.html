@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Parcours Académique</title>
+  <link rel="stylesheet" href="css/parcours.css">
+  <!-- Add Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+   <!-- Toggle Button -->
+   <button id="toggle-navbar" class="toggle-button">☰</button>
+
+   <!-- Side Navbar -->
+   <div class="side-navbar hidden" id="side-navbar">
+     
+     <ul>
+       <li><a href="evenements.html">Manifestations scientifiques</a></li>
+       <li><a href="matieres.html">Matières</a></li>
+       <li><a href="passions.html">Passions</a></li>
+       <li><a href="quiz.html">Quiz</a></li>
+       <li><a href="iit.html">IIT</a></li>
+     </ul>
+   </div>
+  <header>
+    <h1>Mon Parcours Académique</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="parcours.html" class="active">Parcours</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="experiences.html">Expériences</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section Parcours -->
+  <section class="parcours">
+    <h2>Mon Parcours Académique</h2>
+
+    <div class="diplome">
+      <h3>Licence en Informatique</h3>
+      <p>J'ai obtenu ma Licence en Informatique à l'institut supérieur d'informatique et multimedia sfax. Cette formation m'a permis de développer des compétences solides en programmation, en algorithmique et en gestion de bases de données.</p>
+      <img src="images/diplome.jpg" alt="Diplôme Licence Informatique" class="diplome-img">
+    </div>
+
+    <div class="diplome">
+      <h3>Ingénieur en Informatique (en cours)</h3>
+      <p>Actuellement, je poursuis mes études en tant qu'étudiant en Ingénierie Informatique à l'IIT. Je prévois d'obtenir mon diplôme d'ingénieur en 2026. Mon parcours actuel met l'accent sur le développement web, l'intelligence artificielle et la gestion des systèmes d'information.</p>
+      <!-- Loading logo replacing the engineer diploma image -->
+      <div class="loading-logo">
+        <div class="spinner"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h3>Me suivre sur les réseaux sociaux</h3>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100005562796777" target="_blank" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/bassem-lahiani-3058a1270/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/bisbis1234" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- <script src="javascript/navigation.js"></script> -->
+  <script>
+    const toggleButton = document.getElementById('toggle-navbar');
+    const sideNavbar = document.getElementById('side-navbar');
+
+    toggleButton.addEventListener('click', () => {
+      sideNavbar.classList.toggle('hidden');
+    });
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IIT - Témoignages et Informations</title>
+  <link rel="stylesheet" href="css/iit.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Toggle Button -->
+  <button id="toggle-navbar" class="toggle-button">☰</button>
+
+  <!-- Side Navbar -->
+  <div class="side-navbar hidden" id="side-navbar">
+    <ul>
+      <li><a href="evenements.html">Manifestations scientifiques</a></li>
+      <li><a href="matieres.html">Matières</a></li>
+      <li><a href="passions.html">Passions</a></li>
+      <li><a href="quiz.html">Quizz</a></li>
+      <li><a href="iit.html" class="active">IIT</a></li>
+    </ul>
+  </div>
+
+  <!-- Titre du site -->
+  <header>
+    <h1>Institut International de Technologie (IIT)</h1>
+  </header>
+
+  <!-- Menu de navigation principal -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="parcours.html">Parcours</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="experiences.html">Expériences</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Mission et Vision de l'IIT -->
+  <section id="mission-vision">
+    <h2>Mission et Vision</h2>
+    <p>
+      La mission de l'IIT est de cultiver une perspective internationale, en offrant une formation en ingénierie de haute qualité qui répond aux normes mondiales. Elle s'efforce de former des leaders capables de relever les défis du développement durable, en particulier dans des régions comme le sud de la Tunisie. En renforçant ses partenariats internationaux et nationaux, l'IIT vise à favoriser le transfert de connaissances et à améliorer l'employabilité de ses étudiants à l'échelle mondiale. L'engagement de l'institut en faveur d'une éducation de qualité est également aligné sur ses efforts de développement socio-économique régional.
+    </p>
+  </section>
+
+  <!-- Collaboration Internationale -->
+  <section id="international-collaboration">
+    <h2>Collaboration Internationale</h2>
+    <p>
+      L'IIT entretient de solides liens internationaux, en intégrant des étudiants du monde entier dans ses programmes. Avec plus de 1 000 étudiants internationaux, dont plus de 700 en ingénierie, l'institut propose divers programmes d'échange tels qu'Erasmus et des parcours bi-diplômes. L'IIT travaille également avec des professeurs, des chercheurs et des partenaires étrangers, garantissant une expérience culturelle et académique enrichissante. Ces collaborations sont cruciales pour l'objectif de l'IIT de préparer les étudiants à des carrières internationales.
+    </p>
+  </section>
+
+  <!-- Programmes Innovants -->
+  <section id="innovative-programs">
+    <h2>Programmes Innovants</h2>
+    <p>
+      L'IIT met l'accent sur une approche innovante de l'éducation en proposant divers programmes de formation qui incluent des disciplines d'ingénierie modernes telles que l'ingénierie logicielle, la gestion des systèmes industriels et l'ingénierie mécanique. L'institut intègre une technologie de pointe dans son programme d'études pour garantir que ses diplômés sont bien préparés aux défis de la main-d'œuvre moderne. Son accent sur les compétences pratiques et les connexions industrielles garantit que les étudiants sont hautement employables après l'obtention de leur diplôme.
+    </p>
+  </section>
+
+  <!-- Expérience Étudiante -->
+  <section id="student-experience">
+    <h2>Expérience Étudiante</h2>
+    <p>
+      La vie étudiante à l'IIT est dynamique, avec de nombreuses activités parascolaires disponibles. Les étudiants peuvent participer à divers clubs, notamment IEEE, Game Development, Robotics et Enactus, qui favorisent les compétences en technologie, le travail d'équipe et l'entrepreneuriat. Ces activités sont conçues pour compléter l'apprentissage académique et préparer les étudiants aux défis du monde réel. Les services de soutien aux étudiants de l'IIT, y compris le conseil et l'orientation professionnelle, améliorent encore l'expérience globale.
+    </p>
+  </section>
+
+  <!-- Footer avec réseaux sociaux -->
+  <footer>
+    <h3>Me suivre sur les réseaux sociaux</h3>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100005562796777" target="_blank" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/bassem-lahiani-3058a1270/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/bisbis1234" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- JavaScript pour basculer la barre latérale -->
+  <script>
+    const toggleButton = document.getElementById('toggle-navbar');
+    const sideNavbar = document.getElementById('side-navbar');
+
+    toggleButton.addEventListener('click', () => {
+      sideNavbar.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

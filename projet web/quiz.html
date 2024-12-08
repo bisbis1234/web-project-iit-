@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Interactif</title>
+  <link rel="stylesheet" href="css/quiz.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <script defer src="quiz.js"></script>
+</head>
+<body>
+    <button id="toggle-navbar" class="toggle-button">☰</button>
+
+  <div class="side-navbar hidden" id="side-navbar">
+
+    <ul>
+      <li><a href="evenements.html">Manifestations scientifiques</a></li>
+      <li><a href="matieres.html">Matières</a></li>
+      <li><a href="passions.html">Passions</a></li>
+      <li><a href="quizz.html">Quizz</a></li>
+      <li><a href="iit.html">IIT</a></li>
+    </ul>
+  </div>
+  <header>
+    <h1>Quiz Interactif</h1>
+    <p>Répondez aux questions et découvrez votre score !</p>
+  </header>
+
+  <main>
+    <form id="quiz-form">
+      <!-- Section Science -->
+      <fieldset>
+        <legend>Section : Science</legend>
+        
+        <div>
+          <p>1. Quelle est la planète la plus proche du Soleil ?</p>
+          <label><input type="radio" name="q1" value="A"> Vénus</label>
+          <label><input type="radio" name="q1" value="B"> Mars</label>
+          <label><input type="radio" name="q1" value="C"> Mercure</label>
+        </div>
+
+        <div>
+          <p>2. Quel est le symbole chimique de l'eau ?</p>
+          <label><input type="radio" name="q2" value="A"> HO</label>
+          <label><input type="radio" name="q2" value="B"> H2O</label>
+          <label><input type="radio" name="q2" value="C"> OH2</label>
+        </div>
+
+        <div>
+          <p>3. Quelle est l'unité de mesure de la force ?</p>
+          <label><input type="radio" name="q3" value="A"> Joule</label>
+          <label><input type="radio" name="q3" value="B"> Watt</label>
+          <label><input type="radio" name="q3" value="C"> Newton</label>
+        </div>
+
+        <div>
+          <p>4. Quelle est la vitesse approximative de la lumière ?</p>
+          <label><input type="radio" name="q4" value="A"> 300 000 km/s</label>
+          <label><input type="radio" name="q4" value="B"> 150 000 km/s</label>
+          <label><input type="radio" name="q4" value="C"> 500 000 km/s</label>
+        </div>
+
+        <div>
+          <p>5. Qui a découvert la gravité ?</p>
+          <label><input type="radio" name="q5" value="A"> Isaac Newton</label>
+          <label><input type="radio" name="q5" value="B"> Albert Einstein</label>
+          <label><input type="radio" name="q5" value="C"> Galileo Galilei</label>
+        </div>
+      </fieldset>
+
+      <!-- Section Sport -->
+      <fieldset>
+        <legend>Section : Sport</legend>
+
+        <div>
+          <p>6. Combien y a-t-il de joueurs dans une équipe de football ?</p>
+          <label><input type="radio" name="q6" value="A"> 9</label>
+          <label><input type="radio" name="q6" value="B"> 11</label>
+          <label><input type="radio" name="q6" value="C"> 15</label>
+        </div>
+
+        <div>
+          <p>7. Quel sport est associé à Roland-Garros ?</p>
+          <label><input type="radio" name="q7" value="A"> Golf</label>
+          <label><input type="radio" name="q7" value="B"> Tennis</label>
+          <label><input type="radio" name="q7" value="C"> Rugby</label>
+        </div>
+
+        <div>
+          <p>8. Combien de points vaut un panier en basket-ball ?</p>
+          <label><input type="radio" name="q8" value="A"> 2</label>
+          <label><input type="radio" name="q8" value="B"> 3</label>
+          <label><input type="radio" name="q8" value="C"> 4</label>
+        </div>
+
+        <div>
+          <p>9. Quelle nation a remporté la Coupe du Monde de football en 2018 ?</p>
+          <label><input type="radio" name="q9" value="A"> Allemagne</label>
+          <label><input type="radio" name="q9" value="B"> Brésil</label>
+          <label><input type="radio" name="q9" value="C"> France</label>
+        </div>
+
+        <div>
+          <p>10. Qui est surnommé "le Roi Pelé" ?</p>
+          <label><input type="radio" name="q10" value="A"> Cristiano Ronaldo</label>
+          <label><input type="radio" name="q10" value="B"> Pelé</label>
+          <label><input type="radio" name="q10" value="C"> Diego Maradona</label>
+        </div>
+      </fieldset>
+
+      <!-- Section Cuisine -->
+      <fieldset>
+        <legend>Section : Cuisine</legend>
+
+        <div>
+          <p>11. Quelle est l'ingrédient principal du guacamole ?</p>
+          <label><input type="radio" name="q11" value="A"> Tomate</label>
+          <label><input type="radio" name="q11" value="B"> Avocat</label>
+          <label><input type="radio" name="q11" value="C"> Oignon</label>
+        </div>
+
+        <div>
+          <p>12. Quel pays est célèbre pour le sushi ?</p>
+          <label><input type="radio" name="q12" value="A"> Japon</label>
+          <label><input type="radio" name="q12" value="B"> Chine</label>
+          <label><input type="radio" name="q12" value="C"> Corée</label>
+        </div>
+
+        <div>
+          <p>13. Que contient une quiche lorraine ?</p>
+          <label><input type="radio" name="q13" value="A"> Saumon</label>
+          <label><input type="radio" name="q13" value="B"> Poulet</label>
+          <label><input type="radio" name="q13" value="C"> Lardons</label>
+        </div>
+
+        <div>
+          <p>14. Quel est le fromage principal d'une pizza Margherita ?</p>
+          <label><input type="radio" name="q14" value="A"> Mozzarella</label>
+          <label><input type="radio" name="q14" value="B"> Parmesan</label>
+          <label><input type="radio" name="q14" value="C"> Gouda</label>
+        </div>
+
+        <div>
+          <p>15. Quelle est l'origine des tacos ?</p>
+          <label><input type="radio" name="q15" value="A"> Espagne</label>
+          <label><input type="radio" name="q15" value="B"> Mexique</label>
+          <label><input type="radio" name="q15" value="C"> Argentine</label>
+        </div>
+      </fieldset>
+
+      <button type="button" id="submit-btn">Valider</button>
+    </form>
+
+    <div id="results" style="display: none;">
+      <h2>Résultats</h2>
+      <p id="score"></p>
+      <ul id="correct-answers"></ul>
+    </div>
+  </main>
+  <script>
+    const toggleButton = document.getElementById('toggle-navbar');
+    const sideNavbar = document.getElementById('side-navbar');
+  
+    toggleButton.addEventListener('click', () => {
+      sideNavbar.classList.toggle('hidden'); // Toggle the "hidden" class
+    });
+  </script>
+
+<script src="javascript/quiz.js"></script>
+<footer>
+    <h3>Me suivre sur les réseaux sociaux</h3>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100005562796777" target="_blank" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/bassem-lahiani-3058a1270/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/bisbis1234" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #f0f8ff, #e0f7fa);
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(135deg, #003366, #004080);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  /* Passion Sections */
+  section {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(145deg, #ffffff, #f9f9f9);
+    margin: 30px auto;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1.5s ease;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Passion Image */
+  .passion-img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  }
+  
+  /* Titles for sections */
+  section h2 {
+    color: #004080;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraphs and Text */
+  section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  /* List for values */
+  section ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  section ul li {
+    font-size: 1.2rem;
+    color: #004080;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    background: linear-gradient(135deg, #004080, #0066cc);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+  }
+  
+  footer h3 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+  
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  footer .social-icons a {
+    color: white;
+    font-size: 1.8rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  footer .social-icons a:hover {
+    transform: rotate(15deg) scale(1.4);
+    color: #ffd700;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    section h2 {
+      font-size: 2rem;
+    }
+  
+    .passion-img {
+      width: 100%;
+      height: auto;
+    }
+  
+    footer h3 {
+      font-size: 1.2rem;
+    }
+  
+    footer .social-icons a {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Animations */
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

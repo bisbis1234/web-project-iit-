@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes Passions</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Toggle Button -->
+  <button id="toggle-navbar" class="toggle-button">☰</button>
+
+  <!-- Side Navbar -->
+  <div class="side-navbar hidden" id="side-navbar">
+    <ul>
+      <li><a href="evenements.html">Manifestations scientifiques</a></li>
+      <li><a href="matieres.html">Matières</a></li>
+      <li><a href="passions.html">Passions</a></li>
+      <li><a href="quiz.html">Quizz</a></li>
+      <li><a href="iit.html">IIT</a></li>
+    </ul>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h1>Mes Passions</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="parcours.html">Parcours</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="experiences.html">Expériences</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- Main Content Section -->
+  <section>
+    <h2>La Musculation et la Santé</h2>
+    <img src="images/gym.png" alt="Musculation" class="passion-img">
+    <p>
+      La musculation est une de mes grandes passions. J'y trouve à la fois un moyen de maintenir ma santé physique et mentale. 
+      Ce sport m'enseigne la discipline, la constance et la persévérance. En m'entraînant régulièrement, je développe non seulement ma force physique, mais aussi ma force de caractère.
+    </p>
+   
+  </section>
+
+  <section>
+    <h2>Mes Qualités </h2>
+    <img src="images/quality.jpg" alt="Travail en équipe" class="passion-img">
+    <p>
+      Parmi mes qualités les plus importantes, on retrouve la discipline, la capacité à travailler en équipe et la gestion du stress. Ces compétences sont essentielles dans ma vie professionnelle et personnelle, et je m'efforce de les appliquer tous les jours.
+    </p>
+    
+      <h2>Mes valeurs </h2>
+      <p>
+      <ul>
+        <li><strong>Bienfaisance</strong> - Je m'efforce toujours de faire le bien autour de moi.</li>
+        <li><strong>Non-malfaisance</strong> - J'évite de causer du tort à autrui.</li>
+        <li><strong>Respect de l'autonomie</strong> - Je respecte les choix et la liberté des autres.</li>
+        <li><strong>Justice</strong> - Je crois en l'égalité et l'équité dans toutes les situations.</li>
+      </ul>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h3>Me suivre sur les réseaux sociaux</h3>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100005562796777" target="_blank" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/bassem-lahiani-3058a1270/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/bisbis1234" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- JavaScript for side navbar toggle -->
+  <script>
+    const toggleButton = document.getElementById('toggle-navbar');
+    const sideNavbar = document.getElementById('side-navbar');
+
+    toggleButton.addEventListener('click', () => {
+      sideNavbar.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

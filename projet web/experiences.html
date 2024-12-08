@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/experiences.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <title >expériences Professionnelles</title>
+
+</head>
+<body>
+    <button id="toggle-navbar" class="toggle-button">☰</button>
+
+   <!-- Side Navbar -->
+   <div class="side-navbar hidden" id="side-navbar">
+     
+     <ul>
+       <li><a href="evenements.html">Manifestations scientifiques</a></li>
+       <li><a href="matieres.html">Matières</a></li>
+       <li><a href="passions.html">Passions</a></li>
+       <li><a href="quiz.html">Quiz</a></li>
+       <li><a href="iit.html">IIT</a></li>
+     </ul>
+   </div>
+  <header>
+    Expériences Professionnelles
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="parcours.html" class="active">Parcours</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="experiences.html">Expériences</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- <header>
+    Expériences Professionnelles
+  </header> -->
+  <section>
+    <h2>EXPÉRIENCE PROFESSIONNELLE</h2>
+    <h3>Développeur Web</h3>
+    <p><span class="highlight">06/2023 - 07/2023</span> | Medicacom, Sfax - Stage</p>
+    <ul>
+      <li>Développement d'interfaces web, front et back.</li>
+      <li>Identification et résolution des problèmes sur les applications : performance, sécurité et compatibilité.</li>
+      <li>Intégration d'APIs externes dans les projets web.</li>
+      <li>Utilisation de React.js, Node.js et MySQL pour le développement d'applications web.</li>
+    </ul>
+
+    <h3>Développeur Web</h3>
+    <p><span class="highlight">02/2024 - 05/2024</span> | Medicacom, Sfax - Stage PFE</p>
+    <ul>
+      <li>Développement d'une application web dentaire (3D Guide Dental).</li>
+      <li>Création et maintenance de sites web responsives avec React TS, TailwindCSS, et Strapi.</li>
+      <li>Optimisation du référencement naturel (SEO).</li>
+      <li>Participation aux réunions Agile (Scrum).</li>
+      <li>Mise à jour des compétences techniques grâce à la veille technologique.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Projets Réalisés</h2>
+    <div class="project">
+      <h3>3D Guide Dental</h3>
+      <p>
+        Développement d'une plateforme web spécialisée pour les cabinets dentaires, intégrant des services tels que la modélisation assistée par ordinateur (CAO) et l’analyse radiologique.
+      </p>
+      <p>
+        Fonctionnalités principales :
+      </p>
+      <ul>
+        <li>Téléchargement d'empreintes numériques et de fichiers radiologiques.</li>
+        <li>Récupération des travaux prêts à être imprimés ou des rapports radiologiques.</li>
+        <li>Développement front et back avec React, TailwindCSS, et Strapi.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <h3>Me suivre sur les réseaux sociaux</h3>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100005562796777" target="_blank" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/bassem-lahiani-3058a1270/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/bisbis1234" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </footer>
+  <script>
+    const toggleButton = document.getElementById('toggle-navbar');
+    const sideNavbar = document.getElementById('side-navbar');
+  
+    toggleButton.addEventListener('click', () => {
+      sideNavbar.classList.toggle('hidden'); // Toggle the "hidden" class
+    });
+  </script>
+</body>
+</html>
